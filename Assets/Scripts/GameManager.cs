@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -15,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        if(GameData.Instance.IsPaused)
+            return;
+        
         _transform.Translate(Vector3.up * _speed * Time.deltaTime, Space.World);
     }
 }

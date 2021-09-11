@@ -15,10 +15,9 @@ public class Taxi : MonoBehaviour
     [SerializeField] private float _blinkTimeSingle = 0.2f;
     [SerializeField] private float _blinkTimeTotal = 2f;
 
-    public int CurrentLives { get; private set; }
+    // public int CurrentLives { get; private set; }
     public bool IsInvincible { get; private set; }
-    public State VehicleState { get; private set; }
-    
+
     // references
     private Transform _transform;
     private Renderer _renderer;
@@ -27,7 +26,7 @@ public class Taxi : MonoBehaviour
 
     private void Awake()
     {
-        CurrentLives = _maxLives;
+        GameData.Instance.Health.Current = _maxLives;
         _transform = GetComponent<Transform>();
         _renderer = GetComponent<Renderer>();
         _waitForBlink = new WaitForSeconds(_blinkTimeSingle);
@@ -61,7 +60,9 @@ public class Taxi : MonoBehaviour
         if (IsInvincible)
             return;
         
-        if (CurrentLives > 1)
+        GameData.Instance.Health.Current--;
+        
+        if (GameData.Instance.Health.Current > 0)
             StartCoroutine(GetHit());
         else
             Destroy();
@@ -70,7 +71,6 @@ public class Taxi : MonoBehaviour
     private IEnumerator GetHit()
     {
         // start
-        CurrentLives--;
         IsInvincible = true;
         
         // animation: blink
@@ -88,6 +88,8 @@ public class Taxi : MonoBehaviour
 
     private void Destroy()
     {
+        // TODO deactivete pause button on death
+        GameData.Instance.IsPaused = true;
         Debug.Log("Death");  
     }
 }
