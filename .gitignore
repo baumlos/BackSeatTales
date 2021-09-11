@@ -70,3 +70,6 @@ crashlytics-build.properties
 
 todo.txt
 todo.txt.meta
+
+# Visual studio code
+.vscode
