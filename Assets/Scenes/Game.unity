@@ -677,7 +677,7 @@ MonoBehaviour:
   _speed: 10
   _screenWrap: {x: 7, y: 4}
   _blinkTimeSingle: 0.2
-  _blinkTimeTotal: 3
+  _blinkTimeTotal: 2
 --- !u!114 &1011410036
 MonoBehaviour:
   m_ObjectHideFlags: 0
