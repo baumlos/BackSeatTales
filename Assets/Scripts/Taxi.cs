@@ -9,7 +9,6 @@ public class Taxi : MonoBehaviour
     private static readonly int ANIM_DIRECTION = Animator.StringToHash("directionX");
     
     [Header("General Settings")]
-    [SerializeField] private int _maxLives = 3;
     [SerializeField] private float _speed = 1f;
     [SerializeField] private Vector2 _screenWrap;
     
@@ -31,8 +30,6 @@ public class Taxi : MonoBehaviour
 
     private void Awake()
     {
-        GameData.Instance.Health.Current = _maxLives;
-        
         _transform = GetComponent<Transform>();
         _renderer = GetComponent<Renderer>();
         _animator = GetComponent<Animator>();
@@ -76,15 +73,11 @@ public class Taxi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (IsInvincible)
-            return;
+        if (other.gameObject.tag.Equals("Dialogue"))
+            other.GetComponent<Dialogue>().Respawn(true);
         
-        GameData.Instance.Health.Current--;
-        
-        if (GameData.Instance.Health.Current > 0)
+        else if (!IsInvincible)
             StartCoroutine(GetHit());
-        else
-            Destroy();
     }
 
     private IEnumerator GetHit()
@@ -103,12 +96,5 @@ public class Taxi : MonoBehaviour
 
         // finish
         IsInvincible = false;
-    }
-
-    private void Destroy()
-    {
-        // TODO deactivete pause button on death
-        GameData.Instance.IsPaused = true;
-        Debug.Log("Death");  
     }
 }

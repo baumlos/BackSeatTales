@@ -18,7 +18,7 @@ public class Background : MonoBehaviour
         if(GameData.Instance.IsPaused)
             return;
         
-        float amount = _speed * Time.deltaTime;
+        float amount = GameData.Instance.SpeedConstant * _speed * Time.deltaTime;
         transform.Translate(amount * Vector3.down, Space.World);
 
         if (transform.position.y < -halfLength)
