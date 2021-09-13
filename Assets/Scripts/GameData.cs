@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class GameData
 {
     private static GameData instance;
@@ -27,4 +29,9 @@ public class GameData
     public Observable<string> LevelName;
     public bool IsPaused { get; set; }
     public string Passenger { get; set; } // TODO replace with Passenger object?
+
+    public static void Reset()
+    {
+        Debug.Log("Reset");
+    }
 }
