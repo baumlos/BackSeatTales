@@ -16,6 +16,9 @@ public class Taxi : MonoBehaviour
     [Header("On Getting Hit Settings")]
     [SerializeField] private float _blinkTimeSingle = 0.2f;
     [SerializeField] private float _blinkTimeTotal = 2f;
+
+    public float debug;
+    public float lastPosX;
     
     public bool IsInvincible { get; private set; }
 
@@ -44,14 +47,21 @@ public class Taxi : MonoBehaviour
         float inputV = Input.GetAxis("Vertical");
 
         if (GameData.Instance.IsPaused)
+        {
+            _animator.speed = 0;
             return;
+        }
+
+        _animator.speed = 1;
 
         // move
         var amount = (inputH * Vector3.right + inputV * Vector3.up) * _speed * Time.deltaTime;
         _transform.Translate(amount, Space.Self);
         
         // TODO add animation
-        // _animator.SetFloat(ANIM_DIRECTION, amount.x);
+        _animator.SetFloat(ANIM_DIRECTION, inputH);
+
+        debug = inputH;
         
         // Screen border
         if (_transform.localPosition.x > _screenWrap.x)
