@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class Taxi : MonoBehaviour
 {
+    private static readonly int ANIM_DIRECTION = Animator.StringToHash("directionX");
+    
     [Header("General Settings")]
     [SerializeField] private int _maxLives = 3;
     [SerializeField] private float _speed = 1f;
@@ -14,21 +16,24 @@ public class Taxi : MonoBehaviour
     [Header("On Getting Hit Settings")]
     [SerializeField] private float _blinkTimeSingle = 0.2f;
     [SerializeField] private float _blinkTimeTotal = 2f;
-
-    // public int CurrentLives { get; private set; }
+    
     public bool IsInvincible { get; private set; }
 
     // references
     private Transform _transform;
     private Renderer _renderer;
+    private Animator _animator;
     
     private WaitForSeconds _waitForBlink;
 
     private void Awake()
     {
         GameData.Instance.Health.Current = _maxLives;
+        
         _transform = GetComponent<Transform>();
         _renderer = GetComponent<Renderer>();
+        _animator = GetComponent<Animator>();
+        
         _waitForBlink = new WaitForSeconds(_blinkTimeSingle);
     }
     
@@ -41,8 +46,12 @@ public class Taxi : MonoBehaviour
         if (GameData.Instance.IsPaused)
             return;
 
+        // move
         var amount = (inputH * Vector3.right + inputV * Vector3.up) * _speed * Time.deltaTime;
         _transform.Translate(amount, Space.Self);
+        
+        // TODO add animation
+        // _animator.SetFloat(ANIM_DIRECTION, amount.x);
         
         // Screen border
         if (_transform.localPosition.x > _screenWrap.x)

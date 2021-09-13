@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class VerticalMovement : MonoBehaviour
 {
     [SerializeField] private float _speed = 1;
     private Transform _transform;
@@ -15,6 +15,6 @@ public class GameManager : MonoBehaviour
         if(GameData.Instance.IsPaused)
             return;
         
-        _transform.Translate(Vector3.up * _speed * Time.deltaTime, Space.World);
+        _transform.Translate(Vector3.down * _speed * Time.deltaTime, Space.World);
     }
 }
