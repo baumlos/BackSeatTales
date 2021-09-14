@@ -12,7 +12,7 @@ public class ObstaclePath : MonoBehaviour
     private float accelerate;
     private int moveOption = 1;
 
-    private Vector2 screenWrap = new Vector2(7, 7);
+    private Vector2 screenWrap = new Vector2(10, 10);
 
 	void Start () 
     {
@@ -70,13 +70,13 @@ public class ObstaclePath : MonoBehaviour
 
     private void MoveDown()
     {
-        transform.Translate(Vector3.down * speed * Time.deltaTime, Space.World);
+        transform.Translate(Vector3.down * speed * Time.deltaTime * GameData.Instance.SpeedConstant, Space.World);
         ReBornIfOutOfScreen();
     }
 
     private void MoveDiagonally()
     {
-        transform.Translate((Vector3.down + Vector3.right).normalized * speed * Time.deltaTime, Space.World);
+        transform.Translate((Vector3.down + Vector3.right).normalized * speed * Time.deltaTime * GameData.Instance.SpeedConstant, Space.World);
         ReBornIfOutOfScreen();
     }
 
@@ -86,14 +86,23 @@ public class ObstaclePath : MonoBehaviour
             transform.localPosition.x < -screenWrap.x || 
             transform.localPosition.y < -screenWrap.y)
         {
+            ReInstantiateAndRandomizeMoveOptions();
+        }
+    }
+
+    private void ReInstantiateAndRandomizeMoveOptions()
+    {
+        // Re-instantiate the speed and position
             transform.localPosition = wayPoints[currentWayPointIndex].transform.position;
             speed = waveConfig.GetMoveSpeed();
-        }
+
+        // Randomize the moveOption
+            moveOption = Random.Range(1, 4);
     }
 
     private void MoveAlongAPath()
     {
-        float step = speed * Time.deltaTime;
+        float step = speed * Time.deltaTime * GameData.Instance.SpeedConstant;
 
         // If not yet reached last waypoint
         if (currentWayPointIndex <= wayPoints.Count - 1)
@@ -113,8 +122,8 @@ public class ObstaclePath : MonoBehaviour
         }
         else
         {
-            speed = waveConfig.GetMoveSpeed();
             currentWayPointIndex = 0;
+            ReInstantiateAndRandomizeMoveOptions();
         }
     }
 }

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50b2fdd29e4136c409f9e2de98f8d8a3, type: 3}
   m_Name: ObstacleWaveConfig 1
   m_EditorClassIdentifier: 
-  obstaclePrefab: {fileID: 2058064803591942854, guid: c2750d73a04e65241a4955829c9e824d, type: 3}
+  obstaclePrefab: {fileID: 2058064803591942854, guid: 40467418986c2074397d96d8a6f991fc, type: 3}
   pathPrefab: {fileID: 7369293431403863930, guid: 89d926e45aa6f114eac1df651687dae6, type: 3}
   moveSpeed: 2
   timeBetweenSpawns: 0.5
   spawnRandomFactor: 0.3
-  numberOfObstacles: 1
-  shouldIncreaseSpeed: 1
-  accelerate: 0.05
+  numberOfObstacles: 3
+  shouldIncreaseSpeed: 0
+  accelerate: 0
   moveOption: 2
