@@ -19,4 +19,5 @@ MonoBehaviour:
   spawnRandomFactor: 0.3
   numberOfObstacles: 1
   shouldIncreaseSpeed: 1
-  moveOption: 2
+  accelerate: 0.05
+  moveOption: 1
