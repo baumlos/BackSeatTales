@@ -1,3 +1,5 @@
+using UnityEngine;
+
 public class GameData
 {
     private static GameData instance;
@@ -16,15 +18,12 @@ public class GameData
 
     private GameData()
     {
-        if(instance != null)
+        if (instance != null)
             return;
-        
-        Health = new Observable<int>(0);
-        LevelName = new Observable<string>("");
     }
 
-    public Observable<int> Health;
-    public Observable<string> LevelName;
+
     public bool IsPaused { get; set; }
+    public float SpeedConstant = 1;
     public string Passenger { get; set; } // TODO replace with Passenger object?
 }

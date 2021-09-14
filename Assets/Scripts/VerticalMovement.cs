@@ -14,7 +14,8 @@ public class VerticalMovement : MonoBehaviour
     {
         if(GameData.Instance.IsPaused)
             return;
-        
-        _transform.Translate(Vector3.down * _speed * Time.deltaTime, Space.World);
+
+        var amount = GameData.Instance.SpeedConstant * _speed * Time.deltaTime;
+        _transform.Translate(Vector3.down * amount, Space.World);
     }
 }
