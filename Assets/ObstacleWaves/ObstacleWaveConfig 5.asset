@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50b2fdd29e4136c409f9e2de98f8d8a3, type: 3}
+  m_Name: ObstacleWaveConfig 5
+  m_EditorClassIdentifier: 
+  obstaclePrefab: {fileID: 2058064803591942854, guid: c2750d73a04e65241a4955829c9e824d, type: 3}
+  pathPrefab: {fileID: 7842369895926691689, guid: b1c72c4e6c233b34da639976038b73f1, type: 3}
+  moveSpeed: 2
+  timeBetweenSpawns: 4.74
+  spawnRandomFactor: 1.13
+  numberOfObstacles: 1
+  shouldIncreaseSpeed: 0
+  moveOption: 1
