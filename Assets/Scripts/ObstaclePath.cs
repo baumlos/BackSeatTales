@@ -70,13 +70,13 @@ public class ObstaclePath : MonoBehaviour
 
     private void MoveDown()
     {
-        transform.Translate(Vector3.down * speed * Time.deltaTime, Space.World);
+        transform.Translate(Vector3.down * speed * Time.deltaTime * GameData.Instance.SpeedConstant, Space.World);
         ReBornIfOutOfScreen();
     }
 
     private void MoveDiagonally()
     {
-        transform.Translate((Vector3.down + Vector3.right).normalized * speed * Time.deltaTime, Space.World);
+        transform.Translate((Vector3.down + Vector3.right).normalized * speed * Time.deltaTime * GameData.Instance.SpeedConstant, Space.World);
         ReBornIfOutOfScreen();
     }
 
@@ -102,7 +102,7 @@ public class ObstaclePath : MonoBehaviour
 
     private void MoveAlongAPath()
     {
-        float step = speed * Time.deltaTime;
+        float step = speed * Time.deltaTime * GameData.Instance.SpeedConstant;
 
         // If not yet reached last waypoint
         if (currentWayPointIndex <= wayPoints.Count - 1)
