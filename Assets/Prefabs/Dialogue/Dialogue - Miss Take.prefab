@@ -1,0 +1,140 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &5152636059561514843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3972728092946249914, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_text
+      value: Because I was worried about him..
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108320, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108323, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: m_Name
+      value: Dialogue - Miss Take
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[0].line
+      value: 'Do you go off planet? Great, thanks. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[1].line
+      value: To the moon please doll.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[2].line
+      value: "I\u2019m going to see my ex...on the friggin moon for some reason."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[3].line
+      value: "Haven\u2019t heard from him in weeks"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[4].line
+      value: and then suddenly I gets a voicemail from him out of the blue.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[5].line
+      value: He walked out on me last month, after seven years together
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[6].line
+      value: 'Can you believe it? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[7].line
+      value: We got into a huge fight over *his* job.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[8].line
+      value: Because I was worried about him and he just turned it into a fight about
+        my drag, as usual.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[9].line
+      value: and he just turned it into a fight about my drag, as usual.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[0].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[1].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[2].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[5].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[6].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[7].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[8].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[9].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
