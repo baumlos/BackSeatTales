@@ -20,4 +20,4 @@ MonoBehaviour:
   numberOfObstacles: 1
   shouldIncreaseSpeed: 1
   accelerate: 0.05
-  moveOption: 1
+  moveOption: 2
