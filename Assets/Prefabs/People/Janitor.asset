@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf8417bcddff9e4ca34b22a97e841b7, type: 3}
   m_Name: Janitor
   m_EditorClassIdentifier: 
-  personName: Janitor
+  personName: Terry
   color: {r: 0.14929688, g: 0.5188679, b: 0.18666923, a: 1}
   font: {fileID: 11400000, guid: f44499c9c20ad34479096e820d7574e2, type: 2}
+  audioMixer: {fileID: 24100000, guid: f951db1bbc166b2468e6918d2c358eb7, type: 2}
+  volume: 1

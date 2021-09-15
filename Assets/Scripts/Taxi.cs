@@ -3,20 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Taxi : MonoBehaviour
 {
     private static readonly int ANIM_DIRECTION = Animator.StringToHash("directionX");
-    private const float SCREENWRAP_Y_ADJUST = 0.5f;
+    private const float SCREENWRAP_X_ADJUST = 0.8f;
+    private const float SCREENWRAP_Y_ADJUST = 1.4f;
+    
     
     [Header("General Settings")]
     [SerializeField] private float _speed = 1f;
-    [SerializeField] private Vector2 _screenWrap;
+    private Vector2 _screenWrap;
     
     [Header("On Getting Hit Settings")]
     [SerializeField] private float _blinkTimeSingle = 0.2f;
     [SerializeField] private float _blinkTimeTotal = 2f;
 
+    [Header("Sound Effects")] 
+    [SerializeField] private AudioSource _audioSourceEffects;
+    [SerializeField] private AudioClip[] _crashEffects;
+    [SerializeField] private bool _pickRandomEffect;
+    
     [Header("References")]
     [SerializeField] private UiManager _uiManager;
 
@@ -26,8 +34,9 @@ public class Taxi : MonoBehaviour
     private Transform _transform;
     private Renderer _renderer;
     private Animator _animator;
-    private AudioSource _audioSource;
-    
+    private AudioSource _audioSourceEngine;
+    private Camera _camera;
+
     private WaitForSeconds _waitForBlink;
 
     private void Awake()
@@ -35,11 +44,15 @@ public class Taxi : MonoBehaviour
         _transform = GetComponent<Transform>();
         _renderer = GetComponent<Renderer>();
         _animator = GetComponent<Animator>();
-        _audioSource = GetComponent<AudioSource>();
+        _audioSourceEngine = GetComponent<AudioSource>();
+        _camera = Camera.main;
+
+        var vertExtent = (_camera.orthographicSize);
+        var horzExtent = (vertExtent * Screen.width / Screen.height) - SCREENWRAP_X_ADJUST;
+        vertExtent -= SCREENWRAP_Y_ADJUST;
+        _screenWrap = new Vector2(horzExtent, vertExtent);
         
         _waitForBlink = new WaitForSeconds(_blinkTimeSingle);
-
-        _screenWrap = new Vector2(_screenWrap.x, _screenWrap.y - SCREENWRAP_Y_ADJUST);
     }
     
     void Update()
@@ -51,14 +64,14 @@ public class Taxi : MonoBehaviour
         if (GameData.Instance.IsPaused)
         {
             _animator.speed = 0;
-            _audioSource.Pause();
+            _audioSourceEngine.Pause();
             return;
         }
         
         _animator.speed = 1;
         
-        if(!_audioSource.isPlaying)
-            _audioSource.UnPause();
+        if(!_audioSourceEngine.isPlaying)
+            _audioSourceEngine.UnPause();
 
         // move
         var amount = (inputH * Vector3.right + inputV * Vector3.up) * _speed * Time.deltaTime;
@@ -92,6 +105,13 @@ public class Taxi : MonoBehaviour
         // start
         IsInvincible = true;
         _uiManager.TakePenalty();
+        
+        if (_pickRandomEffect)
+        {
+            var i = Random.Range(0, _crashEffects.Length - 1);
+            _audioSourceEffects.clip = _crashEffects[i];
+        }
+        _audioSourceEffects.Play();
         
         // animation: blink
         var blinkAmount = _blinkTimeTotal / _blinkTimeSingle;

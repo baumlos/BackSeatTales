@@ -55,7 +55,7 @@ public class Dialogue : MonoBehaviour
                 line.speaker = _passenger;
             _script[i] = line;
         }
-
+        
         UpdateTextbox();
     }
 
@@ -70,6 +70,7 @@ public class Dialogue : MonoBehaviour
 
     public void Respawn(bool next)
     {
+
         var spawnPos = new Vector2(Random.Range(_resetWidthBetween.x, _resetWidthBetween.y), _resetHeight);
         _transform.position = spawnPos;
 
@@ -84,6 +85,8 @@ public class Dialogue : MonoBehaviour
             
             if (_currentIndex >= _script.Length-1)
             {
+                _currentIndex++;
+                _transform.position = new Vector3(0, -100, 0);
                 EndGame();
             }
             else
@@ -100,21 +103,46 @@ public class Dialogue : MonoBehaviour
         if (_script[_currentIndex].audio != null)
         {
             _audioSourceVoice.clip = _script[_currentIndex].audio;
+            _audioSourceVoice.volume = _script[_currentIndex].speaker.volume;
             _audioSourceVoice.Play();
         }
     }
 
     private void UpdateTextbox()
     {
-        _name.text = _script[_currentIndex].speaker.personName;
-        _nameBackground.color = _script[_currentIndex].speaker.color;
+        if (_currentIndex == 0)
+        {
+            var passenger = _script[_currentIndex].speaker;
+            _name.text = passenger.personName;
+            _nameBackground.color = passenger.color;
+            _text.font = passenger.font;
+        }
+        else
+        {
+            if (!_script[_currentIndex - 1].speaker.personName.Equals(_script[_currentIndex].speaker.personName))
+            {
+                var passenger = _script[_currentIndex].speaker;
+                _name.text = passenger.personName;
+                _nameBackground.color = passenger.color;
+                _text.font = passenger.font;
+            }
+        }
         _text.text = _script[_currentIndex].line;
-        _text.font = _script[_currentIndex].speaker.font;
     }
 
     private void EndGame()
     {
-        Debug.Log("End Game");
+        StartCoroutine(WaitForLastClipToFinish());
+        // GameData.Instance.IsPaused = true;
+    }
+
+    private IEnumerator WaitForLastClipToFinish()
+    {
+        while (_audioSourceVoice.isPlaying)
+        {
+            yield return null;
+        }
+
         GameData.Instance.IsPaused = true;
     }
 }

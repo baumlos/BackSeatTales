@@ -15,3 +15,5 @@ MonoBehaviour:
   personName: Miss Take
   color: {r: 0.6603774, g: 0.109024554, b: 0.41568884, a: 1}
   font: {fileID: 11400000, guid: f44499c9c20ad34479096e820d7574e2, type: 2}
+  audioMixer: {fileID: 24100000, guid: fd9d8c6f33a6c624baa34eae6a6585b7, type: 2}
+  volume: 0.1
