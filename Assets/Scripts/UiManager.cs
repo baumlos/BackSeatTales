@@ -36,8 +36,15 @@ public class UiManager : MonoBehaviour
 
     private void Update()
     {
-        if(GameData.Instance.IsPaused)
+        if (GameData.Instance.IsPaused)
+        {
+            if(Input.GetKeyDown(KeyCode.Space))
+                PauseGame(false);
             return;
+        }
+        
+        if(Input.GetKeyDown(KeyCode.Space))
+            PauseGame(true);
         
         _timer += Time.deltaTime;
         float time = _timer + GameData.Instance.Penalty;
@@ -56,6 +63,7 @@ public class UiManager : MonoBehaviour
     private void PauseGame(bool isPaused)
     {
         _pauseToggle.isOn = isPaused;
+        _speedSlider.interactable = !isPaused;
         GameData.Instance.IsPaused = isPaused;
     }
 
