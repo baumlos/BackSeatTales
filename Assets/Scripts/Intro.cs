@@ -15,6 +15,7 @@ public class Intro : MonoBehaviour
     5. wait a bit
     6. panel 2 appears
     */
+    [SerializeField] private GameObject image;
     [SerializeField] private GameObject panelImageBoxLeft;
     [SerializeField] private GameObject panelImageBoxRightTop;
     [SerializeField] private GameObject panelImageBoxRightBottom;
@@ -28,15 +29,24 @@ public class Intro : MonoBehaviour
 
     [SerializeField] private TMP_Text dialogueBox;
     [SerializeField] private List<string> voiceString;
-    [SerializeField] private float waitTime = 0.5f;
+    [SerializeField] private float waitTime = 1.0f;
 
     private const string GAME_SCENE = "Game";
 
+    private Image backgroundImage;
+    private Color32 GREYOUT = new Color32(255, 255, 255, 50);
+    private Color32 WHITE = new Color32(255, 255, 255, 255);
+    private Color32 BG_LEFT = new Color32(170, 209, 213, 255);
+    private Color32 BG_RIGHT_TOP = new Color32(173, 227, 242, 255);
+    private Color32 BG_RIGHT_BOTTOM = new Color32(39, 32, 52, 255);
+
     void Start()
     {
-        panelImageBoxRightTop.SetActive(false);
-        panelImageBoxRightBottom.SetActive(false);
-        StartCoroutine(StartIntro());    
+        backgroundImage = image.GetComponent<Image>();
+        backgroundImage.color = BG_LEFT;
+        panelImageBoxRightTop.GetComponent<Image>().color = GREYOUT;
+        panelImageBoxRightBottom.GetComponent<Image>().color = GREYOUT;
+        StartCoroutine(StartIntro());
     }
     
 
@@ -69,14 +79,19 @@ public class Intro : MonoBehaviour
     {
         if (index == 1)
         {
-            panelImageBoxRightTop.SetActive(true);
+            backgroundImage.color = BG_RIGHT_TOP;
+            panelImageBoxLeft.GetComponent<Image>().color = GREYOUT;
+            panelImageBoxRightTop.GetComponent<Image>().color = WHITE;
+            panelImageBoxRightBottom.GetComponent<Image>().color = GREYOUT;
         }
+
         if (index == 2)
         {
-            panelImageBoxRightBottom.SetActive(true);
+            backgroundImage.color = BG_RIGHT_BOTTOM;
+            panelImageBoxRightTop.GetComponent<Image>().color = GREYOUT;
+            panelImageBoxRightBottom.GetComponent<Image>().color = WHITE;
         }
-
-
+        
         dialogueBox.text = voiceString[index];
 
         if (voiceClips[index] != null)
