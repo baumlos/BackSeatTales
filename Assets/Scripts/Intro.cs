@@ -25,7 +25,7 @@ public class Intro : MonoBehaviour
     [SerializeField] [Range(0, 1)] float engineSoundVolume = 0.25f;
 
     [SerializeField] private List<AudioClip> voiceClips;
-    [SerializeField] [Range(0, 30)] float voiceClipVolume = 5.0f;
+    [SerializeField] [Range(0, 1)] float voiceClipVolume = 1.0f;
 
     [SerializeField] private TMP_Text dialogueBox;
     [SerializeField] private List<string> voiceString;
