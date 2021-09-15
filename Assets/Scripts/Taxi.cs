@@ -7,6 +7,7 @@ using UnityEngine;
 public class Taxi : MonoBehaviour
 {
     private static readonly int ANIM_DIRECTION = Animator.StringToHash("directionX");
+    private const float SCREENWRAP_Y_ADJUST = 0.5f;
     
     [Header("General Settings")]
     [SerializeField] private float _speed = 1f;
@@ -38,6 +39,8 @@ public class Taxi : MonoBehaviour
         _animator = GetComponent<Animator>();
         
         _waitForBlink = new WaitForSeconds(_blinkTimeSingle);
+
+        _screenWrap = new Vector2(_screenWrap.x, _screenWrap.y - SCREENWRAP_Y_ADJUST);
     }
     
     void Update()
