@@ -27,6 +27,7 @@ public class Taxi : MonoBehaviour
     
     [Header("References")]
     [SerializeField] private UiManager _uiManager;
+    [SerializeField] private Complaints _complaints;
 
     public bool IsInvincible { get; private set; }
 
@@ -105,10 +106,11 @@ public class Taxi : MonoBehaviour
         // start
         IsInvincible = true;
         _uiManager.TakePenalty();
+        _complaints.PlayComplaint();
         
         if (_pickRandomEffect)
         {
-            var i = Random.Range(0, _crashEffects.Length - 1);
+            var i = Random.Range(0, _crashEffects.Length);
             _audioSourceEffects.clip = _crashEffects[i];
         }
         _audioSourceEffects.Play();

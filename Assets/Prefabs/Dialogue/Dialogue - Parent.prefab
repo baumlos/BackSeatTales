@@ -56,6 +56,10 @@ PrefabInstance:
       value: Dialogue - Parent
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _passenger
+      value: 
+      objectReference: {fileID: 11400000, guid: a78cd42e6821e134e9a085fc4b0139c5, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.size
       value: 19
       objectReference: {fileID: 0}

@@ -39,6 +39,7 @@ public class Dialogue : MonoBehaviour
     private AudioSource _audioSourceVoice;
 
     private int _currentIndex;
+    private bool _soundTriggered;
     
     private void Awake()
     {
@@ -70,7 +71,7 @@ public class Dialogue : MonoBehaviour
 
     public void Respawn(bool next)
     {
-
+        _soundTriggered = false;
         var spawnPos = new Vector2(Random.Range(_resetWidthBetween.x, _resetWidthBetween.y), _resetHeight);
         _transform.position = spawnPos;
 
@@ -78,7 +79,7 @@ public class Dialogue : MonoBehaviour
         {
             if (_pickRandomEffect)
             {
-                var i = Random.Range(0, _soundEffects.Length - 1);
+                var i = Random.Range(0, _soundEffects.Length);
                 _audioSourceEffect.clip = _soundEffects[i];
             }
             _audioSourceEffect.Play();
@@ -100,6 +101,7 @@ public class Dialogue : MonoBehaviour
     public void PlayClip()
     {
         // play audio clip
+        _soundTriggered = true;
         if (_script[_currentIndex].audio != null)
         {
             _audioSourceVoice.clip = _script[_currentIndex].audio;
@@ -144,5 +146,15 @@ public class Dialogue : MonoBehaviour
         }
 
         GameData.Instance.IsPaused = true;
+    }
+
+    public bool IsSilent()
+    {
+        return _soundTriggered && !_audioSourceVoice.isPlaying;
+    }
+
+    public float GetPassengerVolume()
+    {
+        return _passenger.volume;
     }
 }
