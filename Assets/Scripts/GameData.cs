@@ -22,8 +22,7 @@ public class GameData
             return;
     }
 
-
     public bool IsPaused { get; set; }
     public float SpeedConstant = 1;
-    public string Passenger { get; set; } // TODO replace with Passenger object?
+    public int Penalty { get; set; }
 }

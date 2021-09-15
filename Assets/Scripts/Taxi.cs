@@ -16,9 +16,12 @@ public class Taxi : MonoBehaviour
     [SerializeField] private float _blinkTimeSingle = 0.2f;
     [SerializeField] private float _blinkTimeTotal = 2f;
 
+    [Header("References")]
+    [SerializeField] private UiManager _uiManager;
+    
     public float debug;
     public float lastPosX;
-    
+
     public bool IsInvincible { get; private set; }
 
     // references
@@ -84,6 +87,7 @@ public class Taxi : MonoBehaviour
     {
         // start
         IsInvincible = true;
+        _uiManager.TakePenalty();
         
         // animation: blink
         var blinkAmount = _blinkTimeTotal / _blinkTimeSingle;

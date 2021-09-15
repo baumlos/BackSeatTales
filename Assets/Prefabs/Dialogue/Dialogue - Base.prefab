@@ -353,7 +353,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
+  m_text: "Yeah right, Mr I\u2019m So Afraid Of Spiders I Literally Run Out Of The
+    House When I See One. "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f44499c9c20ad34479096e820d7574e2, type: 2}
   m_sharedMaterial: {fileID: -4360595991651655160, guid: f44499c9c20ad34479096e820d7574e2, type: 2}

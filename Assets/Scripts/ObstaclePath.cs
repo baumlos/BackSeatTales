@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ObstaclePath : MonoBehaviour
 {
@@ -14,15 +16,23 @@ public class ObstaclePath : MonoBehaviour
 
     private Vector2 screenWrap = new Vector2(10, 10);
 
-	void Start () 
+    private Animator animator;
+
+	void Awake ()
     {
-	}
+        animator = GetComponent<Animator>();
+    }
 	
 	// Update is called once per frame
 	void Update ()
     {
-        if(GameData.Instance.IsPaused)
+        if (GameData.Instance.IsPaused)
+        {
+            animator.speed = 0;
             return;
+        }
+        
+        animator.speed = 1;
 
         if (waveConfig == null)
             return;
@@ -123,6 +133,24 @@ public class ObstaclePath : MonoBehaviour
         else
         {
             currentWayPointIndex = 0;
+            ReInstantiateAndRandomizeMoveOptions();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // reset when collision with dialogue so they don't overlap
+        if (other.gameObject.tag.Equals("Dialogue"))
+        {
+            ReInstantiateAndRandomizeMoveOptions();
+        }
+    }
+    
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        // reset when collision with dialogue so they don't overlap
+        if (other.gameObject.tag.Equals("Dialogue"))
+        {
             ReInstantiateAndRandomizeMoveOptions();
         }
     }
