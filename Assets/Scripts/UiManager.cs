@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 public class UiManager : MonoBehaviour
 {
     private const string MENU_SCENE = "MainMenu";
-    private const int PENALTY_VALUE = 1;
+    private const int PENALTY_VALUE = 5;
     private readonly string PENALTY_STRING = $"+{PENALTY_VALUE.ToString()}";
     
     [SerializeField] private Toggle _pauseToggle;
@@ -36,6 +36,9 @@ public class UiManager : MonoBehaviour
 
     private void Update()
     {
+        if(GameData.Instance.IsPaused)
+            return;
+        
         _timer += Time.deltaTime;
         float time = _timer + GameData.Instance.Penalty;
         

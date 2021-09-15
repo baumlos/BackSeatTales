@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class ObstaclePath : MonoBehaviour
 {
@@ -123,6 +125,24 @@ public class ObstaclePath : MonoBehaviour
         else
         {
             currentWayPointIndex = 0;
+            ReInstantiateAndRandomizeMoveOptions();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        // reset when collision with dialogue so they don't overlap
+        if (other.gameObject.tag.Equals("Dialogue"))
+        {
+            ReInstantiateAndRandomizeMoveOptions();
+        }
+    }
+    
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        // reset when collision with dialogue so they don't overlap
+        if (other.gameObject.tag.Equals("Dialogue"))
+        {
             ReInstantiateAndRandomizeMoveOptions();
         }
     }
