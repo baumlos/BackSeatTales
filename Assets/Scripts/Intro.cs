@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class Intro : MonoBehaviour
@@ -14,28 +15,27 @@ public class Intro : MonoBehaviour
     5. wait a bit
     6. panel 2 appears
     */
-    [SerializeField] private GameObject panelImageBox;
-    [SerializeField] private List<Sprite> panels;
+    [SerializeField] private GameObject panelImageBoxLeft;
+    [SerializeField] private GameObject panelImageBoxRightTop;
+    [SerializeField] private GameObject panelImageBoxRightBottom;
 
     [Header("SFX")]
     [SerializeField] private AudioClip engineSound;
     [SerializeField] [Range(0, 1)] float engineSoundVolume = 0.25f;
 
     [SerializeField] private List<AudioClip> voiceClips;
-    [SerializeField] [Range(0, 5)] float voiceClipVolume = 5.0f;
+    [SerializeField] [Range(0, 10)] float voiceClipVolume = 5.0f;
 
     [SerializeField] private TMP_Text dialogueBox;
     [SerializeField] private List<string> voiceString;
-    [SerializeField] private float waitTime = 5.0f;
+    [SerializeField] private float waitTime = 2.0f;
 
-    private Image pannelImage;
+    private const string GAME_SCENE = "Game";
 
-    // Start is called before the first frame update
     void Start()
     {
-        pannelImage = panelImageBox.GetComponent<Image>();
-        pannelImage.sprite = panels[0];
-
+        panelImageBoxRightTop.SetActive(false);
+        panelImageBoxRightBottom.SetActive(false);
         StartCoroutine(StartIntro());    
     }
     
@@ -48,13 +48,13 @@ public class Intro : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         // Show panels
-        for(int i = 0; i < panels.Count; i++)
+        for(int i = 0; i < voiceClips.Count; i++)
         {
             yield return StartCoroutine(PlayAndShowDialog(i));
         }
 
-        //Hide itself
-        gameObject.SetActive(false);
+        //load game scene
+        LoadGameScene();
     }
 
     private void PlayEngineSound()
@@ -67,7 +67,16 @@ public class Intro : MonoBehaviour
 
     private IEnumerator PlayAndShowDialog(int index)
     {
-        pannelImage.sprite = panels[index];
+        if (index == 1)
+        {
+            panelImageBoxRightTop.SetActive(true);
+        }
+        if (index == 2)
+        {
+            panelImageBoxRightBottom.SetActive(true);
+        }
+
+
         dialogueBox.text = voiceString[index];
 
         if (voiceClips[index] != null)
@@ -76,5 +85,10 @@ public class Intro : MonoBehaviour
         }
 
         yield return new WaitForSeconds(waitTime);
+    }
+
+    private void LoadGameScene()
+    {
+        SceneManager.LoadScene(GAME_SCENE);
     }
 }
