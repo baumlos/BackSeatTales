@@ -30,15 +30,20 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private Passenger _passenger;
     [SerializeField] private DialogueLine[] _script;
 
+    [Header("Sound Effect")] 
+    [SerializeField] private AudioSource _audioSourceEffect;
+    [SerializeField] private AudioClip[] _soundEffects;
+    [SerializeField] private bool _pickRandomEffect;
+
     private Transform _transform;
-    private AudioSource _audioSource;
+    private AudioSource _audioSourceVoice;
 
     private int _currentIndex;
     
     private void Awake()
     {
         _transform = GetComponent<Transform>();
-        _audioSource = GetComponent<AudioSource>();
+        _audioSourceVoice = GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -65,18 +70,18 @@ public class Dialogue : MonoBehaviour
 
     public void Respawn(bool next)
     {
-        // play audio clip
-        if (_script[_currentIndex].audio != null)
-        {
-            _audioSource.clip = _script[_currentIndex].audio;
-            _audioSource.Play();
-        }
-        
         var spawnPos = new Vector2(Random.Range(_resetWidthBetween.x, _resetWidthBetween.y), _resetHeight);
         _transform.position = spawnPos;
 
         if (next)
         {
+            if (_pickRandomEffect)
+            {
+                var i = Random.Range(0, _soundEffects.Length - 1);
+                _audioSourceEffect.clip = _soundEffects[i];
+            }
+            _audioSourceEffect.Play();
+            
             if (_currentIndex >= _script.Length-1)
             {
                 EndGame();
@@ -86,6 +91,16 @@ public class Dialogue : MonoBehaviour
                 _currentIndex++;
                 UpdateTextbox();
             }
+        }
+    }
+
+    public void PlayClip()
+    {
+        // play audio clip
+        if (_script[_currentIndex].audio != null)
+        {
+            _audioSourceVoice.clip = _script[_currentIndex].audio;
+            _audioSourceVoice.Play();
         }
     }
 

@@ -19,9 +19,6 @@ public class Taxi : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private UiManager _uiManager;
-    
-    public float debug;
-    public float lastPosX;
 
     public bool IsInvincible { get; private set; }
 
@@ -29,6 +26,7 @@ public class Taxi : MonoBehaviour
     private Transform _transform;
     private Renderer _renderer;
     private Animator _animator;
+    private AudioSource _audioSource;
     
     private WaitForSeconds _waitForBlink;
 
@@ -37,6 +35,7 @@ public class Taxi : MonoBehaviour
         _transform = GetComponent<Transform>();
         _renderer = GetComponent<Renderer>();
         _animator = GetComponent<Animator>();
+        _audioSource = GetComponent<AudioSource>();
         
         _waitForBlink = new WaitForSeconds(_blinkTimeSingle);
 
@@ -52,10 +51,14 @@ public class Taxi : MonoBehaviour
         if (GameData.Instance.IsPaused)
         {
             _animator.speed = 0;
+            _audioSource.Pause();
             return;
         }
-
+        
         _animator.speed = 1;
+        
+        if(!_audioSource.isPlaying)
+            _audioSource.UnPause();
 
         // move
         var amount = (inputH * Vector3.right + inputV * Vector3.up) * _speed * Time.deltaTime;
@@ -63,8 +66,6 @@ public class Taxi : MonoBehaviour
         
         // TODO add animation
         _animator.SetFloat(ANIM_DIRECTION, inputH);
-
-        debug = inputH;
         
         // Screen border
         if (_transform.localPosition.x > _screenWrap.x)
