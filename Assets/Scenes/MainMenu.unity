@@ -148,7 +148,7 @@ Transform:
   m_GameObject: {fileID: 30986603}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.15, y: 1.15, z: 1.15}
   m_Children:
   - {fileID: 902028922}
   - {fileID: 676483784}
@@ -2147,12 +2147,12 @@ MonoBehaviour:
     (Take)
 
 
-    Super
-    Pretzel Punch
+    Super Pretzel
+    Punch
 
     (Father)
 
-    
+
 
     Sadie Jarvis
 
@@ -4486,7 +4486,7 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: 2. Miss Take
       m_Image: {fileID: 0}
-    - m_Text: 3. Dad
+    - m_Text: 3. Father
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:

@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1cf8417bcddff9e4ca34b22a97e841b7, type: 3}
   m_Name: Dad
   m_EditorClassIdentifier: 
-  personName: Dad
+  personName: Father
   color: {r: 0.4627451, g: 0.094117686, b: 0.09411764, a: 1}
   font: {fileID: 11400000, guid: f44499c9c20ad34479096e820d7574e2, type: 2}
+  audioMixer: {fileID: 24100000, guid: fd9d8c6f33a6c624baa34eae6a6585b7, type: 2}
+  volume: 0.2

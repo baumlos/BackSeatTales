@@ -8,11 +8,13 @@ using Random = UnityEngine.Random;
 public class Taxi : MonoBehaviour
 {
     private static readonly int ANIM_DIRECTION = Animator.StringToHash("directionX");
-    private const float SCREENWRAP_Y_ADJUST = 0.5f;
+    private const float SCREENWRAP_X_ADJUST = 0.8f;
+    private const float SCREENWRAP_Y_ADJUST = 1.4f;
+    
     
     [Header("General Settings")]
     [SerializeField] private float _speed = 1f;
-    [SerializeField] private Vector2 _screenWrap;
+    private Vector2 _screenWrap;
     
     [Header("On Getting Hit Settings")]
     [SerializeField] private float _blinkTimeSingle = 0.2f;
@@ -33,7 +35,8 @@ public class Taxi : MonoBehaviour
     private Renderer _renderer;
     private Animator _animator;
     private AudioSource _audioSourceEngine;
-    
+    private Camera _camera;
+
     private WaitForSeconds _waitForBlink;
 
     private void Awake()
@@ -42,10 +45,14 @@ public class Taxi : MonoBehaviour
         _renderer = GetComponent<Renderer>();
         _animator = GetComponent<Animator>();
         _audioSourceEngine = GetComponent<AudioSource>();
+        _camera = Camera.main;
+
+        var vertExtent = (_camera.orthographicSize);
+        var horzExtent = (vertExtent * Screen.width / Screen.height) - SCREENWRAP_X_ADJUST;
+        vertExtent -= SCREENWRAP_Y_ADJUST;
+        _screenWrap = new Vector2(horzExtent, vertExtent);
         
         _waitForBlink = new WaitForSeconds(_blinkTimeSingle);
-
-        _screenWrap = new Vector2(_screenWrap.x, _screenWrap.y - SCREENWRAP_Y_ADJUST);
     }
     
     void Update()

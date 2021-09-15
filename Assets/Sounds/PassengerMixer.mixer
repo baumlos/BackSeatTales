@@ -6,7 +6,7 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: DialogueMixer
+  m_Name: PassengerMixer
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -65,5 +65,5 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: cdfa7920f6859fc4c95de8db08cd4331
   m_FloatValues:
-    7a73c2c9d9fd02e43bb565e79c078fdb: 14.901688
+    7a73c2c9d9fd02e43bb565e79c078fdb: 18.232258
   m_TransitionOverrides: {}
