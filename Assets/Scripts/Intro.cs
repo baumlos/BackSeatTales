@@ -31,7 +31,7 @@ public class Intro : MonoBehaviour
     [SerializeField] private List<string> voiceString;
     [SerializeField] private float waitTime = 1.0f;
 
-    private const string MENU_SCENE = "MainMenu";
+    [SerializeField] private string _loadNextScene;
 
     private Image backgroundImage;
     private Color32 GREYOUT = new Color32(255, 255, 255, 50);
@@ -105,6 +105,6 @@ public class Intro : MonoBehaviour
     private IEnumerator LoadGameScene()
     {
         yield return new WaitForSeconds(waitTime);
-        SceneManager.LoadScene(MENU_SCENE);
+        SceneManager.LoadScene(_loadNextScene);
     }
 }

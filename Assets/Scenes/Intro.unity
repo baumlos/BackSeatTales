@@ -387,16 +387,16 @@ MonoBehaviour:
   engineSound: {fileID: 8300000, guid: 389b77549324f04428b7d648548f5bdf, type: 3}
   engineSoundVolume: 0.34
   voiceClips:
-  - {fileID: 8300000, guid: 6d868f88e37a4f941af28bcb868cde29, type: 3}
+  - {fileID: 8300000, guid: 8cce3108fce66fa4d9deb157e4d90302, type: 3}
   - {fileID: 8300000, guid: 3f1bb50f2978c754ba79108c4465efb1, type: 3}
-  - {fileID: 8300000, guid: a3b1578ed58a53e48807794fce6d1d4e, type: 3}
+  - {fileID: 8300000, guid: 457f8302f81f85d4ca0302bf6f61e937, type: 3}
   voiceClipVolume: 1
   dialogueBox: {fileID: 1160330247}
   voiceString:
   - 'Passenger: The moon please, as fast as possible'
   - Drive over the atmosphere
   - 'Passenger: Take please call me back asap'
-  waitTime: 5
+  waitTime: 3
 --- !u!114 &875507506
 MonoBehaviour:
   m_ObjectHideFlags: 0

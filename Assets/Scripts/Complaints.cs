@@ -15,7 +15,6 @@ public class Complaints : MonoBehaviour
     {
         _audioSource = GetComponent<AudioSource>();
         _audioSource.volume = _dialogue.GetPassengerVolume();
-        Debug.Log(_dialogue.GetPassengerVolume());
     }
 
     public void PlayComplaint()

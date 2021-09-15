@@ -35,6 +35,8 @@ public class Dialogue : MonoBehaviour
     [SerializeField] private AudioClip[] _soundEffects;
     [SerializeField] private bool _pickRandomEffect;
 
+    [Header("Moon")] [SerializeField] private Moon _moon;
+
     private Transform _transform;
     private AudioSource _audioSourceVoice;
 
@@ -134,6 +136,7 @@ public class Dialogue : MonoBehaviour
 
     private void EndGame()
     {
+        _moon.Activated = true;
         StartCoroutine(WaitForLastClipToFinish());
         // GameData.Instance.IsPaused = true;
     }

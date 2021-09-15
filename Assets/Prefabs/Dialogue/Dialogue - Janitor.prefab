@@ -102,245 +102,249 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.size
-      value: 57
+      value: 56
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[1].line
+      propertyPath: _script.Array.data[0].line
       value: '*BEEP BEEP*'
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[2].line
+      propertyPath: _script.Array.data[1].line
       value: I am too busy being a star to answer the phone right now. You know what
         to do. *BEEP*
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[3].line
+      propertyPath: _script.Array.data[2].line
       value: Take, please call me back asap!
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[4].line
+      propertyPath: _script.Array.data[3].line
       value: I will lose signal soon so please hurry.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[5].line
+      propertyPath: _script.Array.data[4].line
       value: You have got to get off the planet!
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[6].line
+      propertyPath: _script.Array.data[5].line
       value: I am on my way to the moon settlement and will wait for you there for
         ten days.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[7].line
+      propertyPath: _script.Array.data[6].line
       value: After that I am going to Mars.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[8].line
+      propertyPath: _script.Array.data[7].line
       value: I know I messed up but you got to believe me and get off planet.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[9].line
+      propertyPath: _script.Array.data[8].line
       value: "I can\u2019t tell you why in a voicemail, you won\u2019t believe me."
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[9].line
+      value: Just please trust me. I love you.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[0].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 6d868f88e37a4f941af28bcb868cde29, type: 3}
+      objectReference: {fileID: 8300000, guid: aa1f17e21c1fa5b42b67abc90c321cde, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[10].line
-      value: Just please trust me. I love you.
-      objectReference: {fileID: 0}
-    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[11].line
       value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[12].line
+      propertyPath: _script.Array.data[11].line
       value: You heard that, huh?
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[13].line
+      propertyPath: _script.Array.data[12].line
       value: Well seeing as you are my ride off this god-forsaken planet I guess
         I can tell you.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[14].line
+      propertyPath: _script.Array.data[13].line
       value: 'You know Indigo Labs?  '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[15].line
+      propertyPath: _script.Array.data[14].line
       value: 'Well, I work there you see. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[16].line
+      propertyPath: _script.Array.data[15].line
       value: I am the Site Supervisor, known by the scientists, however, as the Janitor.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[17].line
+      propertyPath: _script.Array.data[16].line
       value: 'They aint got no respect! '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[18].line
+      propertyPath: _script.Array.data[17].line
       value: 'They aint like other scientists. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[19].line
+      propertyPath: _script.Array.data[18].line
       value: Always so secretive about what goes on there.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[19].line
+      value: "My boyfriend always did suspect something wasn\u2019t right about Indigo."
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[1].audio
       value: 
-      objectReference: {fileID: 8300000, guid: f862e3d37715c124e972212ab55ab568, type: 3}
+      objectReference: {fileID: 8300000, guid: 09b8d046c071f9b43bfd07a728f7d7a9, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[20].line
-      value: "My boyfriend always did suspect something wasn\u2019t right about Indigo."
-      objectReference: {fileID: 0}
-    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[21].line
       value: "\u201CShady as all hell\u201D was the exact phrase he used I believe."
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[22].line
+      propertyPath: _script.Array.data[21].line
       value: 'We got into a fight about it actually. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[23].line
+      propertyPath: _script.Array.data[22].line
       value: "He didn\u2019t want me working there no more and I was too damn stubborn
         to listen. "
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[24].line
+      propertyPath: _script.Array.data[23].line
       value: Idiot.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[25].line
+      propertyPath: _script.Array.data[24].line
       value: Anyway last night I had finished my rounds...
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[26].line
+      propertyPath: _script.Array.data[25].line
       value: 'and just had one report that needed to be checked out before I could
         clock off. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[27].line
+      propertyPath: _script.Array.data[26].line
       value: 'There was a leaky ceiling in Lab04, that needed jimmy rigging. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[28].line
+      propertyPath: _script.Array.data[27].line
       value: "So I popped in my \u2018eadphones, grabbed my tool kit and headed off
         towards the lab."
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[29].line
+      propertyPath: _script.Array.data[28].line
       value: "As I\u2019m walking I notice that ain\u2019t nobody around."
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[2].audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 25afd710824da774191f5c580c269a3b, type: 3}
-    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[30].line
+      propertyPath: _script.Array.data[29].line
       value: I usually have to kick a few scientists out to lock up but there were
         none left.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[31].line
+      propertyPath: _script.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: a3b1578ed58a53e48807794fce6d1d4e, type: 3}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[30].line
       value: Computers were still on, full cups of coffee sat cold on worktops.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[32].line
+      propertyPath: _script.Array.data[31].line
       value: It was eerie.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[33].line
+      propertyPath: _script.Array.data[32].line
       value: "When I got to the lab I didn\u2019t just find a leaky ceiling."
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[34].line
+      propertyPath: _script.Array.data[33].line
       value: Lab 04 looked like a hurricane had hit it.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[35].line
+      propertyPath: _script.Array.data[34].line
       value: There was broken glass all over the benches and floor...
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[36].line
+      propertyPath: _script.Array.data[35].line
       value: stools flipped on their sides and computer screens flashing red...
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[37].line
+      propertyPath: _script.Array.data[36].line
       value: 'with all sorts of warning notices demanding my attention. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[38].line
+      propertyPath: _script.Array.data[37].line
       value: "It\u2019s like them screens were calling to me. "
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[39].line
+      propertyPath: _script.Array.data[38].line
       value: 'Begging me to read them. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[39].line
+      value: "So that\u2019s exactly what I did."
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[3].audio
       value: 
-      objectReference: {fileID: 8300000, guid: a3b1578ed58a53e48807794fce6d1d4e, type: 3}
+      objectReference: {fileID: 8300000, guid: d1b7432f2b4e84849aca5fd416b640d6, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[40].line
-      value: "So that\u2019s exactly what I did."
-      objectReference: {fileID: 0}
-    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[41].line
       value: Warning! Warning! Project Zeta Code Red!
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[42].line
+      propertyPath: _script.Array.data[41].line
       value: Warning! Warning! Ozone Layer at critical.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[43].line
+      propertyPath: _script.Array.data[42].line
       value: 'Human life will be affected in T minus 30 days. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[44].line
+      propertyPath: _script.Array.data[43].line
       value: I knew I had seen something I was not meant to, so I got the hell outta
         there.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[45].line
+      propertyPath: _script.Array.data[44].line
       value: "I think we all gonna die very soon. So I am gonna head for Mars before
         it\u2019s too late. "
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[46].line
+      propertyPath: _script.Array.data[45].line
       value: The way them scientists had just abandoned the lab...
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[47].line
+      propertyPath: _script.Array.data[46].line
       value: "Paired with there being nothing on the news about this\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[48].line
+      propertyPath: _script.Array.data[47].line
       value: I just get a bad feeling that they might not be thinking about saving
         humanity...
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[49].line
+      propertyPath: _script.Array.data[48].line
       value: ...just themselves.
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[49].line
+      value: 'What were they doing in the place? Did they cause this? '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[4].audio
       value: 
-      objectReference: {fileID: 8300000, guid: d1b7432f2b4e84849aca5fd416b640d6, type: 3}
+      objectReference: {fileID: 8300000, guid: 6dc520bccd397124681f425f54ff10a5, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[50].line
-      value: 'What were they doing in the place? Did they cause this? '
-      objectReference: {fileID: 0}
-    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[51].line
       value: I just hope my Take joins me there. I had no time to warn anyone else.
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[52].line
+      propertyPath: _script.Array.data[51].line
       value: Maybe I can send some sort of satellite message back...
+      objectReference: {fileID: 0}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[52].line
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[53].line
@@ -348,12 +352,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[54].line
-      value: ...
+      value: "Oh we\u2019re already here? Thank you. Seriously. You saved my life
+        today."
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[55].line
-      value: "Oh we\u2019re already here? Thank you. Seriously. You saved my life
-        today."
+      value: "Listen man...don\u2019t head back down there. Stay here. Save yourself. "
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[56].line
@@ -374,7 +378,7 @@ PrefabInstance:
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[5].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 6dc520bccd397124681f425f54ff10a5, type: 3}
+      objectReference: {fileID: 8300000, guid: 280c80fdcfd641c4da2f311c0dae398c, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[60].line
       value: "Listen man...don\u2019t head back down there. Stay here. Save yourself. "
@@ -398,191 +402,191 @@ PrefabInstance:
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[6].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 280c80fdcfd641c4da2f311c0dae398c, type: 3}
+      objectReference: {fileID: 8300000, guid: 3c7c6f5781c75c94cbceddbbb9e0aec1, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[7].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 3c7c6f5781c75c94cbceddbbb9e0aec1, type: 3}
+      objectReference: {fileID: 8300000, guid: cbd2c68ff46d32249a663136acc94dca, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[8].audio
       value: 
-      objectReference: {fileID: 8300000, guid: cbd2c68ff46d32249a663136acc94dca, type: 3}
+      objectReference: {fileID: 8300000, guid: ff29a8bf90d25f847918c21b7c835ff0, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[9].audio
       value: 
-      objectReference: {fileID: 8300000, guid: ff29a8bf90d25f847918c21b7c835ff0, type: 3}
+      objectReference: {fileID: 8300000, guid: c4807cf7b5e8b014ca8ebe5de2df2ac5, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[10].audio
       value: 
-      objectReference: {fileID: 8300000, guid: c4807cf7b5e8b014ca8ebe5de2df2ac5, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[11].audio
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 73a3e86eb0f7a3645a1b68521709026e, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[12].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 73a3e86eb0f7a3645a1b68521709026e, type: 3}
+      objectReference: {fileID: 8300000, guid: ae6b5ab796400654a831aa44a31cb1fe, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[13].audio
       value: 
-      objectReference: {fileID: 8300000, guid: ae6b5ab796400654a831aa44a31cb1fe, type: 3}
+      objectReference: {fileID: 8300000, guid: 28bca9a8c23879443b8aac321e904a6d, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[14].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 28bca9a8c23879443b8aac321e904a6d, type: 3}
+      objectReference: {fileID: 8300000, guid: 2f260ed7f601d3248b4bc172ec95a037, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[15].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 2f260ed7f601d3248b4bc172ec95a037, type: 3}
+      objectReference: {fileID: 8300000, guid: 04610c3784d748d419fb219267e210f4, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[16].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 04610c3784d748d419fb219267e210f4, type: 3}
+      objectReference: {fileID: 8300000, guid: e0b1da9c7fb1fe94c8608f377d0c653e, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[17].audio
       value: 
-      objectReference: {fileID: 8300000, guid: e0b1da9c7fb1fe94c8608f377d0c653e, type: 3}
+      objectReference: {fileID: 8300000, guid: c03ab57a0b01d1940881f230f825e458, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[18].audio
       value: 
-      objectReference: {fileID: 8300000, guid: c03ab57a0b01d1940881f230f825e458, type: 3}
+      objectReference: {fileID: 8300000, guid: 83c4e416ded29a2439513369bd97a808, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[19].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 83c4e416ded29a2439513369bd97a808, type: 3}
+      objectReference: {fileID: 8300000, guid: 8ce5ff174a58231469fbafc7a6c4ee7c, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[20].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 8ce5ff174a58231469fbafc7a6c4ee7c, type: 3}
+      objectReference: {fileID: 8300000, guid: 762c9cfc87f9dd143bbc96674593854c, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[21].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 762c9cfc87f9dd143bbc96674593854c, type: 3}
+      objectReference: {fileID: 8300000, guid: bb9532e474c05fb46bf4d925a3a0e6f7, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[22].audio
       value: 
-      objectReference: {fileID: 8300000, guid: bb9532e474c05fb46bf4d925a3a0e6f7, type: 3}
+      objectReference: {fileID: 8300000, guid: 2abea19379b9da64b86c29f1ac6eb184, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[23].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 2abea19379b9da64b86c29f1ac6eb184, type: 3}
+      objectReference: {fileID: 8300000, guid: 22a56e4469df8e4419e911ddf482eaeb, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[24].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 22a56e4469df8e4419e911ddf482eaeb, type: 3}
+      objectReference: {fileID: 8300000, guid: 125613bafefee7548bedabfd96145c19, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[25].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 125613bafefee7548bedabfd96145c19, type: 3}
+      objectReference: {fileID: 8300000, guid: 7c16db0ca5e814149a49faeaf9fd38f0, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[26].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 7c16db0ca5e814149a49faeaf9fd38f0, type: 3}
+      objectReference: {fileID: 8300000, guid: 84ab02eb90b383c40b535856b3a0023a, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[27].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 84ab02eb90b383c40b535856b3a0023a, type: 3}
+      objectReference: {fileID: 8300000, guid: 2b217f08a4ceda045b6a1b1190a6f98e, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[28].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 2b217f08a4ceda045b6a1b1190a6f98e, type: 3}
+      objectReference: {fileID: 8300000, guid: 06f762e2ad9c33a4da76e1b8a9e4a37d, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[29].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 06f762e2ad9c33a4da76e1b8a9e4a37d, type: 3}
+      objectReference: {fileID: 8300000, guid: de5ba4f8b7d40784b8fa53c25356d864, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[30].audio
       value: 
-      objectReference: {fileID: 8300000, guid: de5ba4f8b7d40784b8fa53c25356d864, type: 3}
+      objectReference: {fileID: 8300000, guid: 7a05db2739ea21f4fb6c191c836f6f48, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[31].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 7a05db2739ea21f4fb6c191c836f6f48, type: 3}
+      objectReference: {fileID: 8300000, guid: 76b2ff718bbc9d146a4ad176e4bd6950, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[32].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 76b2ff718bbc9d146a4ad176e4bd6950, type: 3}
+      objectReference: {fileID: 8300000, guid: 599ad7c4d4a2a6645ac7e1336481a75c, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[33].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 599ad7c4d4a2a6645ac7e1336481a75c, type: 3}
+      objectReference: {fileID: 8300000, guid: e03fa82af19aaa14685b8ae0cdd154a6, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[34].audio
       value: 
-      objectReference: {fileID: 8300000, guid: e03fa82af19aaa14685b8ae0cdd154a6, type: 3}
+      objectReference: {fileID: 8300000, guid: 039f2da5dc83baf4b9039b38d1473ac3, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[35].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 039f2da5dc83baf4b9039b38d1473ac3, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[36].audio
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 0e630e7be35f2304aa1ca17fa6627119, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[37].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 0e630e7be35f2304aa1ca17fa6627119, type: 3}
+      objectReference: {fileID: 8300000, guid: 1f84632c6e8993b498678b43e8113896, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[38].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 1f84632c6e8993b498678b43e8113896, type: 3}
+      objectReference: {fileID: 8300000, guid: 3323a585c2083854691e8686c9e41155, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[39].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 3323a585c2083854691e8686c9e41155, type: 3}
+      objectReference: {fileID: 8300000, guid: daf65031512432c4dbec7e91cfe4e842, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[40].audio
       value: 
-      objectReference: {fileID: 8300000, guid: daf65031512432c4dbec7e91cfe4e842, type: 3}
+      objectReference: {fileID: 8300000, guid: 3d7169483979d144b860099c492709c5, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[41].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 3d7169483979d144b860099c492709c5, type: 3}
+      objectReference: {fileID: 8300000, guid: 491d3c16199d7c14fba316179e539630, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[42].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 491d3c16199d7c14fba316179e539630, type: 3}
+      objectReference: {fileID: 8300000, guid: 50caab6f8dbe2a3499350e29fe1b35ef, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[43].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 50caab6f8dbe2a3499350e29fe1b35ef, type: 3}
+      objectReference: {fileID: 8300000, guid: 4007e848937356243b10894d45cb18aa, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[44].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 4007e848937356243b10894d45cb18aa, type: 3}
+      objectReference: {fileID: 8300000, guid: 13d9300532b0e6042bd8db3d84c1821f, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[45].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 13d9300532b0e6042bd8db3d84c1821f, type: 3}
+      objectReference: {fileID: 8300000, guid: e8c91da8042526a42ab04a9c0055897c, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[46].audio
       value: 
-      objectReference: {fileID: 8300000, guid: e8c91da8042526a42ab04a9c0055897c, type: 3}
+      objectReference: {fileID: 8300000, guid: 349e8527050d5814abc14f394742c4f8, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[47].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 349e8527050d5814abc14f394742c4f8, type: 3}
+      objectReference: {fileID: 8300000, guid: 74e4d7a85829d1c43afd9321a1b4ddd5, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[48].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 74e4d7a85829d1c43afd9321a1b4ddd5, type: 3}
+      objectReference: {fileID: 8300000, guid: f4f23958282a6b3449d6cb42c9c2b44b, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[49].audio
       value: 
-      objectReference: {fileID: 8300000, guid: f4f23958282a6b3449d6cb42c9c2b44b, type: 3}
+      objectReference: {fileID: 8300000, guid: a4a3ab2b2b4255e4da4c1310d36c4483, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[50].audio
       value: 
-      objectReference: {fileID: 8300000, guid: a4a3ab2b2b4255e4da4c1310d36c4483, type: 3}
+      objectReference: {fileID: 8300000, guid: df63c5a371403124bb487494899f7c35, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[51].audio
       value: 
-      objectReference: {fileID: 8300000, guid: df63c5a371403124bb487494899f7c35, type: 3}
+      objectReference: {fileID: 8300000, guid: 362380f066a8d004a957dad7ae827da3, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[52].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 362380f066a8d004a957dad7ae827da3, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[53].audio
       value: 
@@ -590,11 +594,11 @@ PrefabInstance:
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[54].audio
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 8300000, guid: 256e1c4a292eb394cbdd0c234d3e3359, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[55].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 256e1c4a292eb394cbdd0c234d3e3359, type: 3}
+      objectReference: {fileID: 8300000, guid: c3c27d634e736c346ae272f8d7babe5f, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[56].audio
       value: 
@@ -620,13 +624,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: c3c27d634e736c346ae272f8d7babe5f, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[1].speaker
+      propertyPath: _script.Array.data[0].speaker
       value: 
       objectReference: {fileID: 11400000, guid: d97d527a49706c345be1f7dafd945de9, type: 2}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
-      propertyPath: _script.Array.data[2].speaker
+      propertyPath: _script.Array.data[1].speaker
       value: 
       objectReference: {fileID: 11400000, guid: 41ed1076a510ebb4fb977729e36abafb, type: 2}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[2].speaker
+      value: 
+      objectReference: {fileID: 11400000, guid: ada0e33f9d654d147b5fb8c25f3f117d, type: 2}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[3].speaker
       value: 
@@ -746,7 +754,7 @@ PrefabInstance:
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[40].speaker
       value: 
-      objectReference: {fileID: 11400000, guid: ada0e33f9d654d147b5fb8c25f3f117d, type: 2}
+      objectReference: {fileID: 11400000, guid: e9040af6d343c7b4697d73f0a98194e8, type: 2}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[41].speaker
       value: 
@@ -758,7 +766,7 @@ PrefabInstance:
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[43].speaker
       value: 
-      objectReference: {fileID: 11400000, guid: e9040af6d343c7b4697d73f0a98194e8, type: 2}
+      objectReference: {fileID: 11400000, guid: ada0e33f9d654d147b5fb8c25f3f117d, type: 2}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[44].speaker
       value: 
@@ -798,11 +806,11 @@ PrefabInstance:
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[53].speaker
       value: 
-      objectReference: {fileID: 11400000, guid: ada0e33f9d654d147b5fb8c25f3f117d, type: 2}
+      objectReference: {fileID: 11400000, guid: 4c20a46500bee134dac470294b7d6ba5, type: 2}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[54].speaker
       value: 
-      objectReference: {fileID: 11400000, guid: 4c20a46500bee134dac470294b7d6ba5, type: 2}
+      objectReference: {fileID: 11400000, guid: ada0e33f9d654d147b5fb8c25f3f117d, type: 2}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[55].speaker
       value: 

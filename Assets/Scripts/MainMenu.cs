@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class MainMenu : MonoBehaviour
 {
-    private const string JANITOR_SCENE = "Game - Terry";
-    private const string MISSTAKE_SCENE = "Game - Take";
-    private const string DAD_SCENE = "Game - Father";
+    private const string JANITOR_SCENE = "Intro - Terry";
+    private const string MISSTAKE_SCENE = "Intro - Take";
+    private const string DAD_SCENE = "Intro - Father";
 
     private int _sceneId;
     

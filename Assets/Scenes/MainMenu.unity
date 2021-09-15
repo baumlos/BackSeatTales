@@ -669,7 +669,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Twisted Taxi
+  m_text: Back Seat Tales
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 77a3ea7c943a1b54dbdc8be210127747, type: 2}
   m_sharedMaterial: {fileID: -3000627695810186561, guid: 77a3ea7c943a1b54dbdc8be210127747, type: 2}
@@ -696,8 +696,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 27
+  m_fontSizeBase: 27
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1353,8 +1353,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Sadie Jarvis \n(Narrative Design)\n\nAnas Pomelova \n(Programming, Game
-    Design)\n\nAlice Lai \n(Programming)\n\nDaniel Kam \n(Art) \n\nAmanda Stevens\n(Sound
+  m_text: "Sadie Jarvis \n(Narrative Design, Game Design)\n\nAnas Pomelova \n(Programming,
+    Game Design)\n\nAlice Lai \n(Programming)\n\nDaniel Kam \n(Art) \n\nAmanda Stevens\n(Sound
     Design) "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f44499c9c20ad34479096e820d7574e2, type: 2}
