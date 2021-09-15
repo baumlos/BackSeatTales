@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class Taxi : MonoBehaviour
 {
@@ -17,6 +18,11 @@ public class Taxi : MonoBehaviour
     [SerializeField] private float _blinkTimeSingle = 0.2f;
     [SerializeField] private float _blinkTimeTotal = 2f;
 
+    [Header("Sound Effects")] 
+    [SerializeField] private AudioSource _audioSourceEffects;
+    [SerializeField] private AudioClip[] _crashEffects;
+    [SerializeField] private bool _pickRandomEffect;
+    
     [Header("References")]
     [SerializeField] private UiManager _uiManager;
 
@@ -26,7 +32,7 @@ public class Taxi : MonoBehaviour
     private Transform _transform;
     private Renderer _renderer;
     private Animator _animator;
-    private AudioSource _audioSource;
+    private AudioSource _audioSourceEngine;
     
     private WaitForSeconds _waitForBlink;
 
@@ -35,7 +41,7 @@ public class Taxi : MonoBehaviour
         _transform = GetComponent<Transform>();
         _renderer = GetComponent<Renderer>();
         _animator = GetComponent<Animator>();
-        _audioSource = GetComponent<AudioSource>();
+        _audioSourceEngine = GetComponent<AudioSource>();
         
         _waitForBlink = new WaitForSeconds(_blinkTimeSingle);
 
@@ -51,14 +57,14 @@ public class Taxi : MonoBehaviour
         if (GameData.Instance.IsPaused)
         {
             _animator.speed = 0;
-            _audioSource.Pause();
+            _audioSourceEngine.Pause();
             return;
         }
         
         _animator.speed = 1;
         
-        if(!_audioSource.isPlaying)
-            _audioSource.UnPause();
+        if(!_audioSourceEngine.isPlaying)
+            _audioSourceEngine.UnPause();
 
         // move
         var amount = (inputH * Vector3.right + inputV * Vector3.up) * _speed * Time.deltaTime;
@@ -92,6 +98,13 @@ public class Taxi : MonoBehaviour
         // start
         IsInvincible = true;
         _uiManager.TakePenalty();
+        
+        if (_pickRandomEffect)
+        {
+            var i = Random.Range(0, _crashEffects.Length - 1);
+            _audioSourceEffects.clip = _crashEffects[i];
+        }
+        _audioSourceEffects.Play();
         
         // animation: blink
         var blinkAmount = _blinkTimeTotal / _blinkTimeSingle;

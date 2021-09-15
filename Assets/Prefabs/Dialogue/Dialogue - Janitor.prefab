@@ -195,6 +195,10 @@ PrefabInstance:
         clock off. '
       objectReference: {fileID: 0}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
+      propertyPath: _script.Array.data[2].audio
+      value: 
+      objectReference: {fileID: 8300000, guid: f862e3d37715c124e972212ab55ab568, type: 3}
+    - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[30].line
       value: 'There was a leaky ceiling in Lab04, that needed jimmy rigging. '
       objectReference: {fileID: 0}
@@ -354,7 +358,7 @@ PrefabInstance:
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[8].audio
       value: 
-      objectReference: {fileID: 8300000, guid: 6dc520bccd397124681f425f54ff10a5, type: 3}
+      objectReference: {fileID: 8300000, guid: 280c80fdcfd641c4da2f311c0dae398c, type: 3}
     - target: {fileID: 3972728093093108326, guid: 9eced71e0916c91429131e014dd8dca1, type: 3}
       propertyPath: _script.Array.data[9].audio
       value: 
