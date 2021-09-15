@@ -393,9 +393,9 @@ MonoBehaviour:
   voiceClipVolume: 1
   dialogueBox: {fileID: 1160330247}
   voiceString:
-  - The moon please, as fast as possible
+  - 'Passenger: The moon please, as fast as possible'
   - Drive over the atmosphere
-  - Take please call me back asap
+  - 'Passenger: Take please call me back asap'
   waitTime: 5
 --- !u!114 &875507506
 MonoBehaviour:
@@ -613,8 +613,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000049472, y: -199.89}
-  m_SizeDelta: {x: 766.3778, y: 50}
+  m_AnchoredPosition: {x: -7.112805, y: -199.89}
+  m_SizeDelta: {x: 723.701, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1551732568
 GameObject:
