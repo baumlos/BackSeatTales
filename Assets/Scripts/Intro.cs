@@ -28,7 +28,7 @@ public class Intro : MonoBehaviour
 
     [SerializeField] private TMP_Text dialogueBox;
     [SerializeField] private List<string> voiceString;
-    [SerializeField] private float waitTime = 2.0f;
+    [SerializeField] private float waitTime = 0.5f;
 
     private const string GAME_SCENE = "Game";
 
@@ -54,7 +54,7 @@ public class Intro : MonoBehaviour
         }
 
         //load game scene
-        LoadGameScene();
+        StartCoroutine(LoadGameScene());
     }
 
     private void PlayEngineSound()
@@ -87,8 +87,9 @@ public class Intro : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
     }
 
-    private void LoadGameScene()
+    private IEnumerator LoadGameScene()
     {
+        yield return new WaitForSeconds(waitTime);
         SceneManager.LoadScene(GAME_SCENE);
     }
 }
